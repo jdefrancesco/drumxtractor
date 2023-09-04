@@ -12,6 +12,8 @@ Usage:
 This will output the components into seperate files. Didn't add detection to
 determine which component (drums or whatever) corresponds to the output file.
 Will do that after I experiment with the easiest way to get what I want.
+
+Written with the help of ChatGPT. Wow I feel so trendy! Look at me I am doing AI stuffz! l33t lulz...
 """
 
 import os
@@ -53,7 +55,7 @@ def main(args):
     # Check the shape of the output
     print("Shape of transformed_data: ", transformed_data.shape)
 
-    # Step 3: Write each separated component to a new WAV file
+    # Write each separated component to a new WAV file
     for i in range(num_components):
         component = transformed_data[:, i]
         print("Writing component:", i)
